@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CHLO HIMACHAL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin-left: 20px;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 15px;
+            margin-top: 10px;
+            box-shadow: 0 0 10px 0 rgba(14, 233, 11, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 94%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        button[type="submit"] {
+            background: #1fb50b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background: #22be0e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #02980a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact us</h1>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Please fill out the form below to send us an inquiry.</p>
+            <form action="submitForm()" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 IT Services</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            alert("Form submitted!");
+        }
+    </script>
+</body>
+</html>
